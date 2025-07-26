@@ -1,0 +1,63 @@
+What is a Class?
+================
+A class is a blueprint or template that defines the structure and behavior of objects.
+It encapsulates:
+- Attributes (data/variables)
+- Methods (functions/behavior)
+
+Attributes:
+- Variables inside a class.
+- Represent the properties of the object.
+
+Methods:
+- Functions defined inside a class.
+- Represent the behavior or actions of the object.
+
+Example: Car Class
+------------------
+class Car:
+    def __init__(self, color, model, year):
+        self.color = color         # Attribute
+        self.model = model         # Attribute
+        self.year = year           # Attribute
+
+    def start(self):               # Method
+        print(f"{self.model} started.")
+
+    def stop(self):                # Method
+        print(f"{self.model} stopped.")
+
+    def accelerate(self):          # Method
+        print(f"{self.model} is accelerating!")
+
+
+What is an Object?
+==================
+An object is an instance of a class.
+When you create an object, you're creating a real example of the class with specific data.
+
+Each object has:
+- Its own values for attributes
+- Access to all methods defined in the class
+
+Example: Creating Objects
+--------------------------
+my_car = Car("Red", "Ferrari", 2022)
+your_car = Car("Black", "BMW", 2021)
+
+# Accessing object data
+print(my_car.color)      # Output: Red
+print(your_car.model)    # Output: BMW
+
+# Calling methods
+my_car.start()           # Output: Ferrari started.
+your_car.accelerate()    # Output: BMW is accelerating!
+
+
+Summary
+=======
+| Term    | Meaning                                                                 |
+|---------|-------------------------------------------------------------------------|
+| Class   | Blueprint for creating objects. Defines attributes and methods.         |
+| Object  | Instance of a class. Each object has its own data and behavior.         |
+| Example | Car is a class. my_car, your_car are objects of the Car class.          |

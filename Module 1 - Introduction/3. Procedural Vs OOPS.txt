@@ -1,0 +1,78 @@
+Procedural Programming vs Object-Oriented Programming (OOP)
+===========================================================
+
+1. Definition:
+   - Procedural: Program is built around procedures (functions).
+   - OOP: Program is built around objects (data + behavior).
+
+2. Structure:
+   - Procedural: Top-down approach (step-by-step procedures).
+   - OOP: Bottom-up approach (objects & classes).
+
+3. Focus:
+   - Procedural: Focus on functions or routines.
+   - OOP: Focus on data (objects) and their interactions.
+
+4. Data Handling:
+   - Procedural: Data is exposed to the entire program.
+   - OOP: Data is encapsulated within objects.
+
+5. Code Reusability:
+   - Procedural: Less reusable; functions often repeated.
+   - OOP: High reusability via inheritance & polymorphism.
+
+6. Modularity:
+   - Procedural: Difficult to manage in large codebases.
+   - OOP: Highly modular using classes and objects.
+
+7. Security:
+   - Procedural: Low, due to use of global data.
+   - OOP: High, due to encapsulation and data hiding.
+
+8. Example Languages:
+   - Procedural: C, Pascal, Fortran.
+   - OOP: Python, Java, C++, C#, Ruby.
+
+9. Real-world Example:
+   - Procedural: Writing a recipe step-by-step.
+   - OOP: Designing a car with blueprint and components.
+
+10. Maintenance & Scalability:
+    - Procedural: Harder to modify or scale.
+    - OOP: Easier to update, extend, and maintain.
+
+Example Code:
+
+Procedural Style:
+-----------------
+def deposit(balance, amount):
+    return balance + amount
+
+def withdraw(balance, amount):
+    return balance - amount
+
+balance = 1000
+balance = deposit(balance, 200)
+balance = withdraw(balance, 100)
+
+OOP Style:
+----------
+class BankAccount:
+    def __init__(self, balance):
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+
+    def withdraw(self, amount):
+        self.balance -= amount
+
+account = BankAccount(1000)
+account.deposit(200)
+account.withdraw(100)
+
+Summary:
+--------
+- Procedural: Action-oriented (what to do).
+- OOP: Entity-oriented (who does what).
+
